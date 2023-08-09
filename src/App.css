@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input{
+  border:none;
+  background-color: #D9D9D9;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+
+.mediumInput{
+  height: 3.7rem;
+}
+
+.shortInput{
+  height: 2rem;
+}
+
+.tallInput{
+  height: 5.9rem;
+}
+
+.fullInput{
+  width: 100%;
+}
+
+.divInputGeral{
+  font-family:Arial, Helvetica, sans-serif;
+    /* font-weight: 800; */
+  font-size: 18px;
+  color:#767676;
+
+}
+
+.smallInput{
+  width: 5rem;
+}
+
+.mediumIput{
+  width: 8rem;
+}
+
+.longInput{
+  width: 25rem;
+}
+
+button{
+  border:none;
+  border-radius: 3px;
+  color:white;
+  font-size: 14px;
+  font-weight: 800;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.buttonGreen{
+  background-color: #6DAA57;
+}
+
+.buttonGreen:hover{
+  background-color: #5a8d49;
+
+}
+
+.buttonRed{
+  background-color: #CE4040;
+}
+
+.buttonRed:hover{
+  background-color: #b13939;
+}
+
+.inputBusca{
+  padding:10px;
+  width: 26rem;
+  margin-top:1rem;
+}

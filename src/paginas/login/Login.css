@@ -1,0 +1,52 @@
+.loginPage {
+  background-color: #CADEE2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxLogin{
+  background-color: white;
+  padding: 2.7rem 3.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 3px;
+
+}
+
+.titulo{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #358A96;
+  border-bottom: solid 1px #8C8C8C;
+  width: 30.6rem;
+}
+
+.divInputLogin{
+  font-family:Arial, Helvetica, sans-serif;
+    /* font-weight: 800; */
+  font-size: 18px;
+  color:#767676;
+
+}
+
+.inputLogin{
+  width: 28.6rem;
+  padding: 0 15px;
+}
+
+.buttonEntrar{
+  width:8rem;
+  height: 2.7rem;
+
+}
+
+.buttonDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
