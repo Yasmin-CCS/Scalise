@@ -6,7 +6,6 @@ import './ListaProdutos.css';
 export function ListaProdutos() {
   return (
     <div className="listaProdutoPage">
-      <NavBar />
       <div className="listaProduto">
         <SideBar />
         <div className="boxListaProduto">

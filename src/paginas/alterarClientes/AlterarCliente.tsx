@@ -1,12 +1,10 @@
 import React from 'react';
-import { NavBar } from '../../componentes/navBar/navBar';
 import { SideBar } from '../../componentes/sideBar/sideBar';
 import './AlterarCliente.css';
 
 export function AlterarCliente() {
   return (
     <div className="cadastrarClientePage">
-      <NavBar />
       <div className="cadastrarCliente">
         <SideBar />
         <div className="boxCadastrarCliente">

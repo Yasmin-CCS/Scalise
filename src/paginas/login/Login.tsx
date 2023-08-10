@@ -5,7 +5,6 @@ import './Login.css';
 export function Login() {
   return (
     <>
-      <NavBar />
       <div className="loginPage">
         <div className="boxLogin">
           <p className='titulo'>Entrar</p>

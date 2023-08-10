@@ -1,12 +1,14 @@
 import React from 'react';
+import { useNavigate} from 'react-router-dom'
 import { NavBar } from '../../componentes/navBar/navBar';
 import { SideBar } from '../../componentes/sideBar/sideBar';
 import './AlterarProduto.css';
 
 export function AlterarProduto() {
+
   return (
     <div className="cadastrarProdutoPage">
-      <NavBar />
+
       <div className="cadastrarProduto">
         <SideBar />
         <div className="boxCadastrarProduto">

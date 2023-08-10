@@ -6,7 +6,6 @@ import './ListaClientes.css';
 export function ListaClientes() {
   return (
     <div className="listaClientePage">
-      <NavBar />
       <div className="listaCliente">
         <SideBar />
         <div className="boxlistaCliente">

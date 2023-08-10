@@ -6,7 +6,6 @@ import './CadastrarCliente.css';
 export function CadastrarCliente() {
   return (
     <div className="cadastrarClientePage">
-      <NavBar />
       <div className="cadastrarCliente">
         <SideBar />
         <div className="boxCadastrarCliente">

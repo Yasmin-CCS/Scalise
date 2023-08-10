@@ -6,7 +6,6 @@ import './CadastrarProduto.css';
 export function CadastrarProduto() {
   return (
     <div className="cadastrarProdutoPage">
-      <NavBar />
       <div className="cadastrarProduto">
         <SideBar />
         <div className="boxCadastrarProduto">
