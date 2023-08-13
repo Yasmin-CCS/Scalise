@@ -11,6 +11,8 @@ import { ListaClientes } from './paginas/listaClientes/ListaClientes'
 import { CadastrarVendas } from './paginas/cadastrarVendas/CadastrarVendas'
 import { ListaVendas } from './paginas/listaVendas/ListaVendas'
 import { NavBar } from './componentes/navBar/navBar';
+import { CadastrarCategoria } from './paginas/cadastrarCategoria/CadastrarCategoria';
+import { AlterarCategoria } from './paginas/alterarCategorias/AlterarCategoria';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/cadastrarproduto" element={<CadastrarProduto />} />
+          <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
           <Route path="/alterarproduto" element={<AlterarProduto />} />
+          <Route path="/alterarcategoria" element={<AlterarCategoria />} />
           <Route path="/cadastrarcliente" element={<CadastrarCliente />} />
           <Route path="/cadastrarvenda" element={<CadastrarVendas />} />
           <Route path="/alterarcliente" element={<AlterarCliente />} />
