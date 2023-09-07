@@ -1,9 +1,8 @@
 .navBar {
   background-color: #0F144E;
-  width: 100%;
-  /* height: 8vh; */
-  padding: 2rem 0 2rem 2rem;
-  
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  margin:0px;
+  width: 100vh;
 }
 
 .navBar p{
@@ -11,4 +10,10 @@
   font-weight: 800;
   font-size: 24px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@media (min-width: 930px) {
+  .navBar {
+    width:auto
+  }
 }

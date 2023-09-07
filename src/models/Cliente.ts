@@ -7,7 +7,7 @@ interface CLiente {
   mun: string;
   uf: string;
   codf: string;
-  ie_rg: string;
+  ierg: string;
   fone: string;
   fonc: string;
   cep: number;

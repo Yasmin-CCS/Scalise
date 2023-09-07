@@ -1,3 +1,4 @@
+import Categoria from "./Categoria";
 
 interface Produto {
   id: number;
@@ -17,6 +18,7 @@ interface Produto {
   ipi: number;
   iva: number;
   fci: string;
+  categoria?: Categoria | null;
 }
 
 export default Produto;

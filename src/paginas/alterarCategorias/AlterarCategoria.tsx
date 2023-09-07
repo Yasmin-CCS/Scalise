@@ -5,8 +5,7 @@ import './AlterarCategoria.css';
 export function AlterarCategoria() {
   return (
     <div className="cadastrarClientePage">
-      <div className="cadastrarCliente">
-        <SideBar />
+
         <div className="boxCadastrarCliente">
           <p className='titulo'>Alterar Cliente</p>
           <div className='divsForms2'>
@@ -20,7 +19,7 @@ export function AlterarCategoria() {
             <button className='buttonEntrar buttonGreen'>Salvar</button>
           </div>
         </div>
-      </div>
+
     </div>
   )
 }

@@ -1,38 +1,21 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Login } from './paginas/login/Login';
-import { CadastrarProduto } from './paginas/cadastrarProduto/CadastrarProduto';
-import { AlterarProduto } from './paginas/alterarProduto/AlterarProduto';
-import { CadastrarCliente } from './paginas/cadastrarClientes/CadastrarCliente';
-import { AlterarCliente } from './paginas/alterarClientes/AlterarCliente'
-import { ListaProdutos } from './paginas/listaProdutos/ListaProdutos'
-import { ListaClientes } from './paginas/listaClientes/ListaClientes'
-import { CadastrarVendas } from './paginas/cadastrarVendas/CadastrarVendas'
-import { ListaVendas } from './paginas/listaVendas/ListaVendas'
+import React from 'react';
+import AppRoutes from './routes/AppRoutes';
+import store from './store/Store';
+import { Provider } from 'react-redux';
 import { NavBar } from './componentes/navBar/navBar';
-import { CadastrarCategoria } from './paginas/cadastrarCategoria/CadastrarCategoria';
-import { AlterarCategoria } from './paginas/alterarCategorias/AlterarCategoria';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
+
   return (
     <>
-      <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/cadastrarproduto" element={<CadastrarProduto />} />
-          <Route path="/cadastrarcategoria" element={<CadastrarCategoria />} />
-          <Route path="/alterarproduto" element={<AlterarProduto />} />
-          <Route path="/alterarcategoria" element={<AlterarCategoria />} />
-          <Route path="/cadastrarcliente" element={<CadastrarCliente />} />
-          <Route path="/cadastrarvenda" element={<CadastrarVendas />} />
-          <Route path="/alterarcliente" element={<AlterarCliente />} />
-          <Route path="/listaproduto" element={<ListaProdutos />} />
-          <Route path="/listacliente" element={<ListaClientes />} />
-          <Route path="/listavenda" element={<ListaVendas />} />
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store} >
+        <NavBar className="navBar100"/>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </Provider>
     </>
   )
 }

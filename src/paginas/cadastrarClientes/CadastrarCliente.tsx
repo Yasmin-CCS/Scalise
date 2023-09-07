@@ -1,10 +1,9 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import { NavBar } from '../../componentes/navBar/navBar';
-import { SideBar } from '../../componentes/sideBar/sideBar';
 import './CadastrarCliente.css';
 import Cliente from "../../models/Cliente";
 import { post } from "../../services/Service";
-
+import { useSelector } from "react-redux";
+import { TokenState } from "../../store/tokens/TokensReducer";
 
 export function CadastrarCliente() {
   
@@ -17,7 +16,7 @@ export function CadastrarCliente() {
     mun: "",
     uf: "",
     codf: "",
-    ie_rg: "",
+    ierg: "",
     fone: "",
     fonc: "",
     cep: 0,
@@ -60,16 +59,22 @@ export function CadastrarCliente() {
     });
   }
 
+  const token = useSelector<TokenState, TokenState["token"]>(
+    (state) => state.token
+  );
 
   async function onSubmit(event: ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
-    await post("/cliente", cliente, setCliente);
+    await post("/cliente", cliente, setCliente, {
+      headers: {
+        Authorization: token,
+      },
+    });
   }
 
   return (
     <div className="cadastrarClientePage">
-      <div className="cadastrarCliente">
-        <SideBar />
+
         <form className="boxCadastrarCliente" onSubmit={onSubmit}>
           <p className='titulo'>Cadastrar Cliente</p>
           <div className='divsForms'>
@@ -535,7 +540,7 @@ export function CadastrarCliente() {
             <button className='buttonEntrar buttonGreen'>Salvar</button>
           </div>
         </form>
-      </div>
+  
     </div>
   )
 }

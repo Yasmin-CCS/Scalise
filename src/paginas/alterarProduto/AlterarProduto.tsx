@@ -8,9 +8,6 @@ export function AlterarProduto() {
 
   return (
     <div className="cadastrarProdutoPage">
-
-      <div className="cadastrarProduto">
-        <SideBar />
         <div className="boxCadastrarProduto">
           <p className='titulo'>Alterar Produto</p>
           <div className='divsForms'>
@@ -102,7 +99,7 @@ export function AlterarProduto() {
             <button className='buttonEntrar buttonGreen'>Salvar</button>
           </div>
         </div>
-      </div>
+
     </div>
   )
 }

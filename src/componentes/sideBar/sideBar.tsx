@@ -21,6 +21,7 @@ export function SideBar() {
 
         <p className="sideBarTitle">Vendas</p>
         <Link to="/listavenda" className="sideBarItem">Histórico de Vendas</Link>
+        <Link to="/cadastrarvenda" className="sideBarItem">Cadastrar Vendas</Link>
 
       </div>
     </>

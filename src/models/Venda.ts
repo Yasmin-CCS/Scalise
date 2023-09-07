@@ -1,17 +1,21 @@
+import Produto from "./Produto";
+import Usuario from "./Usuario";
+
 interface Venda {
   id: number;
   cod: number;
   pedido: number;
-  data: Date;
+  data: string;
   entrega: string;
-  retira: number;
-  tipoc: string;
+  retira: string;
+  tipoc: number;
+  tipov: number;
   codc: number;
   formam: number;
   formac: number;
   formad: number;
-  usuario: number;
-  produto: number;
+  usuario?: Usuario | null;
+  produto?: Produto | null;
 }
 
 export default Venda;

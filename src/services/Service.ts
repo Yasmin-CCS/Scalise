@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-baseURL: 'localhost:8080'
+baseURL: "http://localhost:8080"
 });
 
 export const cadastroUsuario = async (url: any, dados: any, setDado: any) => {
@@ -24,8 +24,8 @@ export const buscaId = async(url: any, setDado: any, header: any) => {
   setDado(resposta.data)
 }
 
-export const post = async(url: string, dados: object, setDado: any) => {
-  const resposta = await api.post(url, dados)
+export const post = async(url: string, dados: object, setDado: any, header: any) => {
+  const resposta = await api.post(url, dados, header)
   setDado(resposta.data)
 }
 
